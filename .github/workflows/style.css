@@ -1,0 +1,1026 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 217, 217);
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+.cabecalho {
+    width: 90%;
+    background-color: #0b0b0b;
+    padding: 20px 5%;
+    border-bottom: 1px solid #252525;
+}
+
+.barra-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barra-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.barra-menu a:hover {
+    color: #c8a46b;
+}
+
+
+/* SEÇÃO INICIAL */
+
+.inicio {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #111111, #050505);
+}
+
+.inicio-conteudo {
+    max-width: 650px;
+}
+
+
+/* SEU NOME */
+
+.inicio h1 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+
+/* SUA PROFISSÃO */
+
+.inicio h2 {
+    color: #c8a46b;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+
+/* DESCRIÇÃO */
+
+.inicio p {
+    color: #cccccc;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 35px;
+}
+
+
+/* BOTÃO DE CONTATO */
+
+.botao-contato {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #c8a46b;
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao-contato:hover {
+    background-color: #e0bd87;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(200, 164, 107, 0.2);
+}
+
+
+/* RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .barra-menu ul {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .barra-menu a {
+        font-size: 13px;
+    }
+
+    .inicio {
+        min-height: 75vh;
+        padding: 50px 20px;
+    }
+
+    .inicio h1 {
+        font-size: 38px;
+    }
+
+    .inicio h2 {
+        font-size: 21px;
+        line-height: 1.5;
+    }
+
+    .inicio p {
+        font-size: 15px;
+    }
+}
+
+
+
+/* SEÇÃO SOBRE MIM */
+
+.sobre {
+    width: 97%;
+    background-color: #0b0b0b;
+}
+
+/* ORGANIZAÇÃO DA FOTO E DO TEXTO */
+
+.sobre-container {
+    max-width: 100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* FOTO */
+
+.sobre-imagem {
+    flex: 1;
+    max-width: 400px;
+}
+
+.sobre-imagem img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+
+    border-radius: 15px;
+    border: 2px solid #c8a46b;
+
+    box-shadow: 0 10px 30px rgba(200, 164, 107, 0.12);
+
+    transition: transform 0.4s ease;
+}
+
+/* EFEITO NA FOTO */
+
+.sobre-imagem img:hover {
+    transform: scale(1.03);
+}
+
+/* CONTEÚDO TEXTUAL */
+
+.sobre-conteudo {
+    flex: 1.3;
+}
+
+/* TÍTULO */
+
+.sobre-conteudo h2 {
+    color: #c8a46b;
+    font-size: 38px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* LINHA DECORATIVA */
+
+.sobre-conteudo h2::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 3px;
+
+    background-color: #c8a46b;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+/* PARÁGRAFOS */
+
+.sobre-conteudo p {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+/* DESTAQUES NO TEXTO */
+
+.sobre-conteudo strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+
+    .sobre {
+        padding: 65px 6%;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .sobre-imagem {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .sobre-imagem img {
+        height: 350px;
+    }
+
+    .sobre-conteudo {
+        width: 100%;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .sobre-conteudo h2::after {
+        margin: 12px auto 0;
+    }
+
+    .sobre-conteudo p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+/* seção dos projetos*/
+
+.projetos {
+    padding: 100px 8%;
+    background-color: #050505;
+    color: white;
+    text-align: center;
+}
+
+.projetos h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.projetos-descricao {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+
+/* container dos card */
+
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* card */
+
+.projeto-card {
+    width: 350px;
+
+    background-color: #111;
+
+    border: 1px solid #222;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.projeto-card:hover {
+    transform: translateY(-10px);
+    border-color: #f0b20a;
+}
+
+/* onde mostra a imagem dentro do card */
+.projeto-imagem {
+    width: 100%;
+    height: 200px;
+
+    overflow: hidden;
+}
+
+.projeto-imagem img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+
+/* Zoom da imagem */
+
+.projeto-card:hover .projeto-imagem img {
+    transform: scale(1.05);
+}
+
+
+/* onde mostra a descrição do site*/
+
+.projeto-conteudo {
+    padding: 25px;
+}
+
+.projeto-conteudo h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.projeto-conteudo p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* PARTE ONDE MOSTRA AS TECNOLOGIAS QUE UTILIZEI */
+
+.tecnologias {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+}
+
+.tecnologias span {
+    padding: 6px 10px;
+
+    font-size: 12px;
+
+    color: #00ff88;
+
+    border: 1px solid #00ff88;
+    border-radius: 20px;
+}
+
+
+/* BOTÃO DO CARD DO PEOJETO */
+
+.botao-projeto {
+    position: relative;
+
+    display: inline-block;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding-bottom: 5px;
+}
+
+
+/* Traço */
+
+.botao-projeto::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #00ff88;
+
+    transition: 0.3s;
+}
+
+
+/* Efeito do botão */
+
+.botao-projeto:hover {
+    color: #00ff88;
+}
+
+.botao-projeto:hover::after {
+    width: 100%;
+}
+
+
+/* Seção Sobre Mim */
+.sobre {
+    padding: 80px 20px;
+}
+
+/* Foto e texto lado a lado */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Configuração da foto */
+.sobre-imagem img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/* Configuração do texto */
+.sobre-conteudo {
+    flex: 1;
+    max-width: 650px;
+}
+
+.sobre-conteudo h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sobre-conteudo p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-imagem img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/*SEÇÃO DE CONTATO  */
+
+#entraremcontato {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+/*  TÍTULO  */
+
+#entraremcontato h2 {
+    text-align: center;
+    color: #222;
+}
+
+/*  TEXTO  */
+#entraremcontato p {
+    text-align: center;
+    color: #555;
+}
+/*  FORMULÁRIO  */
+
+#entraremcontato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* CAMPOS DE PREENCHIMENTO*/
+
+#contato input,
+#contato textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ===== BOTÃO ===== */
+
+#contato button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse */
+
+#contato button:hover {
+    background-color: #0056b3;
+}
+
+/*SEÇÃO DE CONTATO */
+
+#entraremcontato {
+    width: 90%;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #111111;
+    border: 1px solid #292929;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+
+#entraremcontato h2 {
+    color: #c8a46b;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Texto de apresentação */
+
+#entraremcontato > p {
+    color: #cccccc;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Textos dos campos */
+
+#form-contato label {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Campos de preenchimento */
+
+#form-contato input {
+    width: 100%;
+    padding: 14px;
+    background: #1c1c1c;
+    color: #ffffff;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efeito ao clicar nos campos */
+
+#form-contato input:focus {
+    border-color: #c8a46b;
+    box-shadow: 0 0 8px rgba(200, 164, 107, 0.2);
+}
+
+/* Botão de envio */
+
+#form-contato button {
+    margin-top: 20px;
+    padding: 15px;
+    background: #c8a46b;
+    color: #111111;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no botão */
+
+#form-contato button:hover {
+    background: #e0bd87;
+    transform: translateY(-2px);
+}
+
+/* Mensagem de status */
+
+#mensagem-status {
+    color: #c8a46b;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Adaptação para celulares */
+
+@media (max-width: 600px) {
+    #entraremcontato {
+        width: 92%;
+        padding: 25px 20px;
+        margin: 50px auto;
+    }
+
+    #entraremcontato h2 {
+        font-size: 26px;
+    }
+
+    #entraremcontato > p {
+        font-size: 14px;
+    }
+
+    #form-contato input {
+        padding: 12px;
+    }
+}
+
+
+
+
+
+/*contato02*/
+.contato {
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background: linear-gradient(145deg, #171717, #0b0b0b);
+
+    border: 1px solid #292929;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* TÍTULO */
+
+.contato h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
+/* DETALHE ABAIXO DO TÍTULO */
+
+.contato h2::after {
+    content: "";
+    display: block;
+
+    width: 65px;
+    height: 3px;
+
+    background-color: #c8a46b;
+
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+/* TEXTO */
+
+.contato p {
+    color: #bdbdbd;
+    font-size: 16px;
+    line-height: 1.7;
+
+    max-width: 550px;
+    margin: 0 auto 35px;
+}
+
+/* ÁREA DOS BOTÕES */
+
+.contato-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* ESTILO GERAL DOS BOTÕES */
+
+.contato-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    min-width: 170px;
+    padding: 14px 22px;
+
+    border: 1px solid #c8a46b;
+    border-radius: 8px;
+
+    color: #ffffff;
+    background-color: transparent;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+/* TAMANHO DOS ÍCONES */
+
+.contato-btn i {
+    font-size: 19px;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.contato-btn:hover {
+    background-color: #c8a46b;
+    color: #111111;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(200, 164, 107, 0.15);
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+
+@media (max-width: 600px) {
+
+    .contato {
+        width: 92%;
+        margin: 50px auto;
+        padding: 40px 20px;
+    }
+
+    .contato h2 {
+        font-size: 28px;
+    }
+
+    .contato p {
+        font-size: 14px;
+    }
+
+    .contato-links {
+        flex-direction: column;
+    }
+
+    .contato-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
+
+/*RODAPe */
+
+.rodape {
+    width: 97%;
+    padding: 35px 20px;
+    background-color: #080808;
+    border-top: 1px solid #292929;
+    text-align: center;
+}
+
+/* TEXTO DE DIREITOS AUTORAIS */
+
+.rodape p {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* LISTA DE LINKS */
+
+.rodape-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* LINKS */
+
+.rodape-links a {
+    color: #c8a46b;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.rodape-links a:hover {
+    color: #ffffff;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .rodape {
+        padding: 30px 15px;
+    }
+
+    .rodape-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rodape p {
+        line-height: 1.7;
+    }
+}
+
+.rodape {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.rodape-redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.rodape-redes a {
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.rodape-redes a:hover {
+    color: #25D366;
+    transform: translateY(-5px);
+}
+
+.rodape-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.rodape-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.rodape-links a:hover {
+    color: #fff;
+}
+
+.rodape-creditos {
+    color: #888;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVIDADE DO RODAPÉ */
+
+@media (max-width: 768px) {
+
+    .rodape {
+        padding: 25px 15px;
+    }
+
+    .rodape-redes {
+        gap: 30px;
+        margin: 20px 0;
+    }
+
+    .rodape-redes a {
+        font-size: 27px;
+    }
+
+    .rodape-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .rodape p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .rodape-creditos {
+        font-size: 12px !important;
+    }
+
+}
+
+/* EFEITOS DOS ÍCONES DO RODAPÉ */
+
+.rodape-redes a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* GitHub */
+.rodape-redes a:nth-child(1):hover {
+    color: #ffffff;
+    transform: translateY(-6px) scale(1.15);
+}
+
+/* WhatsApp */
+.rodape-redes a:nth-child(2):hover {
+    color: #25D366;
+    transform: translateY(-6px) scale(1.15);
+}
+
+/* Instagram */
+.rodape-redes a:nth-child(3):hover {
+    color: #E4405F;
+    transform: translateY(-6px) scale(1.15);
+}
+
+/* WHATSAPP FLUTUANTE */
+
+.whatsapp-flutuante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+
+    background-color: #25D366;
+    color: #fff;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    z-index: 9999;
+
+    transition: all 0.3s ease;
+}
+
+.whatsapp-flutuante:hover {
+    transform: scale(1.12);
+    background-color: #1ebe5d;
+}
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+    .whatsapp-flutuante {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 18px;
+        font-size: 32px;
+    }
+}

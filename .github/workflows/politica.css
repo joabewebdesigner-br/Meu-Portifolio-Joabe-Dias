@@ -1,0 +1,142 @@
+
+/*
+   POLÍTICA DE PRIVACIDADE
+ */
+
+.politica-container {
+    max-width: 900px;
+    width: 90%;
+    margin: 60px auto;
+    padding: 40px;
+
+    background-color: #fff;
+    color: #333;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+
+    line-height: 1.8;
+}
+
+/* TÍTULO PRINCIPAL */
+
+.politica-container h1 {
+    font-size: 32px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* DATA DE ATUALIZAÇÃO */
+
+.data-atualizacao {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+/* SUBTÍTULOS */
+
+.politica-container h2 {
+    font-size: 21px;
+    color: #222;
+    margin-top: 30px;
+    margin-bottom: 12px;
+
+    border-left: 4px solid #25D366;
+    padding-left: 12px;
+}
+
+/* PARÁGRAFOS */
+
+.politica-container p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* LISTAS */
+
+.politica-container ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.politica-container li {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+/* LINKS */
+
+.politica-container a {
+    color: #25D366;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.politica-container a:hover {
+    color: #128C7E;
+    text-decoration: underline;
+}
+
+/* BOTÃO VOLTAR */
+
+.voltar-inicio {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 25px;
+
+    background-color: #222;
+    color: #fff !important;
+
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.voltar-inicio:hover {
+    background-color: #25D366;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .politica-container {
+        width: 92%;
+        margin: 30px auto;
+        padding: 25px 18px;
+    }
+
+    .politica-container h1 {
+        font-size: 25px;
+    }
+
+    .politica-container h2 {
+        font-size: 19px;
+    }
+
+    .politica-container p,
+    .politica-container li {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .politica-container {
+        padding: 20px 15px;
+    }
+
+    .politica-container h1 {
+        font-size: 22px;
+    }
+
+}

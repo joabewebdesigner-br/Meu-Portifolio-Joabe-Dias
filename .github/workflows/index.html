@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joabe Dias Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<!-- MENU DE NAVEGAÇÃO -->
+<header class="cabecalho">
+    <nav class="nav barra-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#entraremcontato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- SEÇÃO INICIAL -->
+<section id="home" class="inicio">
+
+    <div class="inicio-conteudo">
+
+        <h1>Joabe Dias</h1>
+
+        <h2>Desenvolvedor Web Front-End & Back-End</h2>
+
+        <p>
+            Em constante aprendizado e evolução, criando sites modernos,
+            funcionais e responsivos. Disponível para novos projetos
+            e oportunidades.
+        </p>
+
+        <a href="#entraremcontato" class="botao-contato">
+            Entre em Contato
+        </a>
+
+    </div>
+
+</section>
+
+<!-- SEÇÃO SOBRE MIM -->
+<section id="sobre" class="sobre">
+
+    <div class="sobre-container">
+
+        <!-- FOTO -->
+        <div class="sobre-imagem">
+            <img src="img/joabephoto.jpeg" alt="Foto de Joabe Dias">
+        </div>
+
+        <!-- TEXTO -->
+        <div class="sobre-conteudo">
+
+            <h2>Sobre Mim</h2>
+
+            <p>
+                Olá! Me chamo <strong>Joabe</strong> e estou em constante
+                aprendizado na área de programação e desenvolvimento web.
+            </p>
+
+            <p>
+                Atualmente, estou estudando <strong>Front-End e Back-End</strong>,
+                buscando aprimorar meus conhecimentos e desenvolver cada vez
+                mais minhas habilidades na criação de sites e aplicações web.
+            </p>
+
+            <p>
+                Meu objetivo é me tornar um <strong>desenvolvedor Full Stack</strong>.
+                Estou em busca de oportunidades para colocar meus conhecimentos
+                em prática, aprender com novos desafios e contribuir para projetos
+                que possam gerar resultados reais.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div id="projetos">
+<section id="projetos" class="projetos">
+
+    <h2>Projetos</h2>
+
+    <p class="projetos-descricao">
+        Aqui estão alguns dos meus projetos recentes. Cada um deles reflete meu
+        compromisso com a qualidade, a funcionalidade e a experiência do usuário.
+    </p>
+
+    <div class="projetos-container">
+
+        <!-- CARD 1 -->
+        <div class="projeto-card">
+
+            <div class ="projeto-imagem">
+                <img src="img/ER-LOGO.png" alt="Site Eliabe Rocha">
+            </div>
+
+            <div class="projeto-conteudo">
+
+                <h3>Eliabe Rocha Eng.</h3>
+
+                <p>
+                    Site profissional desenvolvido para apresentar os serviços de
+                    Regularização de imóveis, obras ,Projetos Cartórios e Consultoria de Engenharia Civil entres outros serviços.
+
+                <div class="tecnologias">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a
+                    href="https://www.eliaberochaeng.com/"
+                    target="_blank"
+                    class="botao-projeto">
+                    Ver Projeto
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+       <div class="projeto-card">
+
+    <div class="projeto-imagem">
+
+        <video autoplay muted loop playsinline>
+            <source src="img/Design sem nome.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+
+    </div>
+
+    <div class="projeto-conteudo">
+
+        <h3>
+            Projeto em Andamento
+            <span class="loading-dots">
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
+            </span>
+        </h3>
+
+        <p>
+            Novo projeto em desenvolvimento. Em breve estará disponível
+            para visualização.
+        </p>
+
+        <div class="tecnologias">
+            <span>Em desenvolvimento</span>
+        </div>
+
+        <a href="#" class="botao-projeto">
+            Em breve
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+</div>
+
+<section id="entraremcontato">
+
+    <h2>Entre em contato</h2>
+
+    <p>Preencha o formulário abaixo para falar comigo.</p>
+
+<form id="form-contato">
+
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefone">Contato</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <button type="submit">Enviar Mensagem</button>
+
+    <p id="mensagem-status" aria-live="polite"></p>
+
+</form>
+</section>
+
+<section>
+    <div class="contato" id="contato">
+
+        <h2>Redes Sociais</h2>
+
+        <p>Vamos tirar seu projeto do papel? Entre em contato e solicite seu orçamento.</p>
+
+        <div class="contato-links">
+
+            <a class="contato-btn whatsapp"
+               href="https://wa.me/5577991889227"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+            </a>
+
+            <a class="contato-btn email"
+               href="mailto:joabewebdesigner@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+                Enviar E-mail
+            </a>
+
+            <a class="contato-btn github"
+               href="https://github.com/joabewebdesigner-br"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                Meu GitHub
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- RODAPÉ DO SITE -->
+
+<footer class="rodape">
+
+    <p>&copy; 2026 Joabe Dias. Todos os direitos reservados.</p>
+
+    <div class="rodape-redes">
+
+        <a href="https://github.com/joabewebdesigner-br"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://wa.me/5577991889227"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://instagram.com/SEU_USUARIO"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+    </div>
+
+    <ul class="rodape-links">
+        <li>
+            <a href="politica-de-privacidade.html">
+                Política de Privacidade
+            </a>
+        </li>
+
+        <li>
+            <a href="termos-de-uso.html">
+                Termos de Uso
+            </a>
+        </li>
+    </ul>
+
+    <p class="rodape-creditos">
+        Desenvolvido por Joabe Dias
+    </p>
+
+</footer>
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5577991889227"
+   class="whatsapp-flutuante"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Entre em contato pelo WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+<script src="java.js"></script>
+</body>
+</html>
